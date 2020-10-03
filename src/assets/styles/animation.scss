@@ -1,0 +1,76 @@
+.st1{fill:#ade4e7}.st2{fill:#fce1d6}
+.st3,.st6,.st7,.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#c1004e}
+.st6,.st7,.st8{fill:#43001c}
+.st7,.st8{fill:#1e1e1e}
+.st8{fill:#28254c}
+
+
+.illustration_floating_girl {
+    display: block;
+    transform: translateX(-150px);
+    margin-bottom: $mainMarginBottom;
+}
+
+.floating_illu  {
+    display: block;
+    width: 150%;
+    transform: translateX(-900px);
+    overflow: visible;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+#hair {
+    animation: hair 2s infinite alternate linear;
+}
+
+@keyframes hair {
+    0% {
+        transform: scale(.6);
+        transform: rotateX(-5deg);
+    }
+
+    50% {
+        transform: rotateX(10deg);
+        transform: scale(1.01);
+        transform:translate(-5px, -5px);
+    }
+
+    100% {
+        transform: rotateX(2deg);
+        transform: scale(1.002);
+        
+    }
+}
+
+#blob_bg path {
+    animation: blob_bg 5s infinite alternate-reverse linear;
+}
+
+@keyframes blob_bg {
+    0% {
+        transform: scale(0.5);
+        transform: rotateY(-10deg);
+    }
+
+    50% {
+        transform: scale(1);
+        transform: rotateY(-15deg);
+    }
+
+    100% {
+        transform: scale(0.5);
+        transform: rotateY(-5deg); 
+    }
+}
