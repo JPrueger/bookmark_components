@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Post from "../views/Post.vue";
 import Mybookmarks from "../views/Mybookmarks.vue";
+import Register from "../views/Register.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/my-bookmarks",
     name: "Mybookmarks",
     component: Mybookmarks,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register,
   },
 ];
 
