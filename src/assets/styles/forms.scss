@@ -17,6 +17,7 @@ form {
         padding: 0 10px 0 10px;
         font-size: calc(18px + (20 - 18) * ((100vw - 200px) / (1600 - 300)));
         line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300))); 
+        margin-bottom: $biggestMarginBottom;
         // appearance: 10px;
     }
     
@@ -38,6 +39,13 @@ form {
         margin-bottom: $biggestMarginBottom;
     }
 
+    textarea {
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin-bottom: $biggestMarginBottom;
+    }
+
     margin-bottom: $biggerMarginBottom;
 
     .label_hide_all_bookcovers {
@@ -56,6 +64,17 @@ form {
         padding: 0 10px 0 10px;
         font-size: calc(18px + (20 - 18) * ((100vw - 200px) / (1600 - 300)));
         line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300))); 
+        margin-bottom: $biggestMarginBottom;
+    }
+
+    // .file_upload {
+    //     border: 1px solid #ccc;
+    //     display: inline-block;
+    //     padding: 6px 12px;
+    //     cursor: pointer;
+    // }
+
+    input[type="file"] {
         margin-bottom: $biggestMarginBottom;
     }
 }

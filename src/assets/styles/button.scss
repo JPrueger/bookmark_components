@@ -1,5 +1,4 @@
 button {
-    background-color: white;
     width: 100%;
     margin-bottom: $mainMarginBottom;
     height: 50px;
@@ -11,6 +10,12 @@ button {
     font-weight: 900;
     border: none;
     border-radius: 10px;
-    padding: 10px 25px 15px 25px;
+    padding: 10px 25px 12px 25px;
     cursor: pointer;
+}
+
+.cancel {
+    background-color: white;
+    border: 1.5px solid $primaryColor;
+    color: $primaryColor
 }

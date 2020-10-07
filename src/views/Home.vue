@@ -41,7 +41,26 @@
               <path d="M268.1 130.7l16.4-17.8s-2-3.9-3.5-4.1c-1.5-.1-17.9 19.4-17.9 19.4s3.6 3.5 5 2.5z" fill="#c1004e"/>
           </g>
       </svg>
-    </div>  
+    </div>
+
+    <h2>Our book of the month!</h2>  
+
+    <img class="bg_blob_book_of_the_month" src="@/assets/images/bg_blob_book_of_the_month.svg" alt="pink background of cover of the current book of the month!">
+    <img class="book_of_the_month" src="@/assets/images/extremely_loud.jpg" alt="cover of the current book of the month!">
+
+
+    <p>Just in case you are a fast-reader (as our co-worker Tim is) and you ran out of recommendations! As you do the whole team behind bookmark loves to read, and we will shout out our favorites each month! 
+    </p>
+
+    <h3>Author</h3>
+    <p>Alexandria LeCarpentier</p>
+
+    <h3>Title</h3>
+    <p>Morning</p>
+
+    <h3>Description</h3>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed ipsum diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata ipsum sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore ipsum magna ipsumaliquyam erat, sed diam voluptua.
+    </p>
 
   </div>
 </template>

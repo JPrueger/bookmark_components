@@ -6,6 +6,8 @@ import Mybookmarks from "../views/Mybookmarks.vue";
 import Register from "../views/Register.vue";
 import Login from "../views/Login.vue";
 import SuggestBook_Step1 from "../views/SuggestBook_Step1.vue";
+import SuggestBook_Step2 from "../views/SuggestBook_Step2.vue";
+
 
 
 const routes = [
@@ -43,6 +45,11 @@ const routes = [
     path: "/suggest-book-step-1",
     name: "SuggestBook_Step1",
     component: SuggestBook_Step1,
+  },
+  {
+    path: "/suggest-book-step-2",
+    name: "SuggestBook_Step2",
+    component: SuggestBook_Step2,
   },
 ];
 

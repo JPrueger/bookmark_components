@@ -40,7 +40,7 @@
                     <input id="title" type="text" value="" name="title" placeholder="Get together">
                 </div>
 
-                <button type="button">Cancel</button>
+                <button type="button" class="cancel">Cancel</button>
 
                 <button type="button">Submit</button>
 

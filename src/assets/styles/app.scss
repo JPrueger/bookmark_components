@@ -12,6 +12,9 @@
 
 @import './form_content_card.scss';
 
+@import './book_of_the_month.scss';
+
+
 * {
     margin: 0;
     padding: 0;
@@ -47,7 +50,7 @@ h2 {
 h3 {
     font-size: calc(25px + (25 - 25) * ((100vw - 200px) / (1600 - 300)));
     line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
-    margin-bottom: $biggerMarginBottom;
+    margin-bottom: $mainMarginBottom;
 }
 
 a {
