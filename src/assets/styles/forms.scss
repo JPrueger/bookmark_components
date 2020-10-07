@@ -9,16 +9,17 @@ form {
     //     border: none;
     // }
 
-    .categoy {
+    .categoy  {
         width: 100%;
         border: 1px solid grey;
         border-radius: 10px;
         height: 40px;
         padding: 0 10px 0 10px;
         font-size: calc(18px + (20 - 18) * ((100vw - 200px) / (1600 - 300)));
-        line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
+        line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300))); 
         // appearance: 10px;
     }
+    
 
     label {
         font-size: calc(20px + (25 - 20) * ((100vw - 200px) / (1600 - 300)));
@@ -41,5 +42,20 @@ form {
 
     .label_hide_all_bookcovers {
         margin-right: 10px;
+    }
+
+    ::placeholder {
+        padding-left: 10px;
+    }
+
+    .find_friend {
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 10px;
+        height: 40px;
+        padding: 0 10px 0 10px;
+        font-size: calc(18px + (20 - 18) * ((100vw - 200px) / (1600 - 300)));
+        line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300))); 
+        margin-bottom: $biggestMarginBottom;
     }
 }
