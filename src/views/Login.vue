@@ -10,12 +10,12 @@
            
                 <div>
                     <label for="email">E-Mail Address (will be your username)</label> <br>
-                    <input id="email" type="email" value="" name="email">
+                    <input id="email" type="email" value="" name="email" placeholder="john.doe@gmail.com">
                 </div>
 
                 <div>
                     <label for="password">Password:</label> <br>
-                    <input id="password" type="password" value="" name="password">
+                    <input id="password" type="password" value="" name="password" placeholder="********">
                 </div>
 
                 <p>No account yet? Register <a href="">here!</a></p> 
