@@ -32,7 +32,7 @@
       <a href="#">login</a>
       <a href="#">terms of service</a>
       <a href="#">privacy policy</a>
-      <a href="#">© 2020 bookmark.</a>
+      <a href="#">© 2020 bookmark</a>
     </div>
 
   </div>

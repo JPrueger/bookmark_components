@@ -30,8 +30,12 @@ p {
     // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     font-size: calc(20px + (25 - 20) * ((100vw - 200px) / (1600 - 300)));
     line-height: calc(1.5em + (2.5 - 1.5) * ((100vw - 100px)/(1600 - 300)));  
-    max-width: 25ch;
+    max-width: 28ch;
     margin-bottom: $biggestMarginBottom;
+}
+
+.highlighted {
+    font-weight: 900;
 }
 
 h1 {
@@ -50,7 +54,7 @@ h2 {
 h3 {
     font-size: calc(25px + (25 - 25) * ((100vw - 200px) / (1600 - 300)));
     line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
-    margin-bottom: $mainMarginBottom;
+    margin-bottom: $biggerMarginBottom;
 }
 
 a {
@@ -72,8 +76,36 @@ a {
     margin-bottom: 70px;
 }
 
-// .container {
-//     width:90%;
-//     max-width:900px;
-//     margin:0 auto;
-// }
+.comment_has_read_it {
+    // background-color: lightgrey;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    // padding: 10px;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+// SCROLLBAR
+
+.wrapper_comments_has_read_it {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    border-radius: 10px;
+}

@@ -17,5 +17,6 @@ button {
 .cancel {
     background-color: white;
     border: 1.5px solid $primaryColor;
-    color: $primaryColor
+    color: $primaryColor;
+    margin-top: $biggerMarginBottom;
 }

@@ -12,13 +12,13 @@
 
                     <p class="card-booktitle">Get together</p>
                     <p class="card-author">by Jane Doe</p>
-                    <p class="card-fast-three-headline">Nina's fast three</p>
-                    <p class="card-fast-three-content">surprising, loud, intense</p>
+                    <p class="card-headline">Nina's fast three</p>
+                    <p class="card-content">surprising, loud, intense</p>
                 
                     <button v-on:click="expandButton">Read more!</button>
                 
                     <div class="content">
-                        <p class="card-recommendation-teaser">Nina wants you to know</p>
+                        <p class="card-teaser">Nina wants you to know</p>
 
                         <p>Hi Lisa! When I read the book I totally thought about you, and I am pretty sure you’d like it. It takes place in the South of England in 1960. It is about getting to know your neighbors and inviting them to a get together in the upper district of St. Kilda. Definitely worth a read!
                         </p>
@@ -119,7 +119,7 @@
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/assets/styles/variables.scss';
 
     .shadow {
@@ -141,18 +141,6 @@
         border-radius: 10px 10px 0 0; 
     }
 
-    // .collapsible:after {
-    //     content: '\002B';
-    //     color: white;
-    //     font-weight: bold;
-    //     float: right;
-    //     margin-left: 5px;
-    // }
-
-    // .active:after {
-    //     content: "\2212";  
-    // }
-
     .content {
         margin-top: 10px;
         max-height: 0;
@@ -172,36 +160,21 @@
         margin-bottom: $biggerMarginBottom;
     }
 
-    .card-fast-three-content {
+    .card-content {
         margin-bottom: $biggerMarginBottom;
     }
 
-    .card-recommendation-teaser, .card-fast-three-headline {
+    .card-teaser, .card-headline {
         margin-bottom: $mainMarginBottom;
     }
 
-    .card-fast-three-headline, .card-recommendation-teaser {
+    .card-headline, .card-teaser {
         font-weight: 900;
         margin-bottom: $lowerMarginBottom;
     }
-
-    // .content p {
-    //     font-size: calc(18px + (25 - 18) * ((100vw - 200px) / (1600 - 300)));
-    //     line-height: calc(1em + (1.5 - 1) * ((100vw - 100px)/(1600 - 300))); 
-    //     margin-bottom: $mainMarginBottom;
-    // }
 
     .collapsible img {
         width: 100%;
         margin-bottom: $mainMarginBottom;
     }
-
-    /* ALL CARDS */ 
-    // .all_cards{
-    //     display: grid;
-    //     grid-column-gap: 15px;
-    //     grid-auto-flow: row;  
-    //     grid-template-columns: repeat(3,minmax(300px, 1fr)); 
-    // }
-
 </style>
