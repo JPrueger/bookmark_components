@@ -18,7 +18,7 @@
                     <option value="friendId">Tom</option>
                 </select>
 
-                <p>Tell us something about the book you’d like to recommend</p>
+                <p class="">Tell us something about the book you’d like to recommend</p>
 
                 <h2>The Basics!</h2>
 
