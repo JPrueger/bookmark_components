@@ -18,6 +18,8 @@
                     <input id="password" type="password" value="" name="password" placeholder="********">
                 </div>
 
+                <ButtonLogin></ButtonLogin>
+
                 <p>No account yet? Register <a href="">here!</a></p> 
                 
             </form>
@@ -26,4 +28,17 @@
     </div>
 
 </template>
+
+<script>
+
+    import ButtonLogin from '@/components/ButtonLogin.vue'
+
+    export default {
+        name: 'Login',
+        components: {
+            ButtonLogin,
+        }
+    }
+
+</script>
     

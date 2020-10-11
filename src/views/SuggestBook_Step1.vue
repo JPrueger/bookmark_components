@@ -1,6 +1,5 @@
 <template>
 
-
     <div class="whole_content_wrapper">
 
         <div class="wrapper_form_content_card">
@@ -40,10 +39,9 @@
                     <input id="title" type="text" value="" name="title" placeholder="Get together">
                 </div>
 
-                <button type="button" class="cancel">Cancel</button>
-
-                <button type="button">Submit</button>
-
+                <ButtonCancel></ButtonCancel>
+                <ButtonSubmit></ButtonSubmit>
+      
             </form>
 
         </div>
@@ -51,3 +49,18 @@
     </div>
 
 </template>
+
+<script>
+
+import ButtonSubmit from '@/components/ButtonSubmit.vue'
+    import ButtonCancel from '@/components/ButtonCancel.vue'
+
+    export default {
+        name: 'Register',
+        components: {
+            ButtonSubmit,
+            ButtonCancel
+        }
+    }
+
+</script>

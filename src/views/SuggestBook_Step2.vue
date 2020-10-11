@@ -39,9 +39,8 @@
                 <label for="uploadImage" class="file_upload">What does the book look like?</label>
                 <input type="file" id="uploadImage" name="uploadImage">
 
-                <button type="button" class="cancel">Cancel</button>
-
-                <button type="button">Submit</button>
+                <ButtonSubmit></ButtonSubmit>
+                <ButtonCancel></ButtonCancel>
 
             </form>
 
@@ -50,3 +49,20 @@
     </div>
 
 </template>
+
+<script>
+
+    // import Buttons from '@/components/Buttons.vue'
+    import ButtonSubmit from '@/components/ButtonSubmit.vue'
+    import ButtonCancel from '@/components/ButtonCancel.vue'
+
+
+    export default {
+        name: 'Register',
+        components: {
+            ButtonSubmit,
+            ButtonCancel
+        }
+    }
+
+</script>

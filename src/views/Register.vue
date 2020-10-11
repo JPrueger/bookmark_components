@@ -43,7 +43,8 @@
                     <input type="checkbox" id="checkbox_hide_bookcovers" name="checkbox_hide_bookcovers" value="">
                 </div>
 
-                
+                <ButtonCancel></ButtonCancel>
+                <ButtonRegister></ButtonRegister>
 
             </form>
 
@@ -54,3 +55,18 @@
     </div>
 
 </template>
+
+<script>
+
+    import ButtonCancel from '@/components/ButtonCancel.vue'
+    import ButtonRegister from '@/components/ButtonRegister.vue'
+
+    export default {
+        name: 'Register',
+        components: {
+            ButtonRegister,
+            ButtonCancel,
+        }
+    }
+
+</script>
