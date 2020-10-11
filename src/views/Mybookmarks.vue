@@ -23,7 +23,6 @@
   import OverviewChoice from '@/components/OverviewChoice.vue'
   import Searchbar from '@/components/Searchbar.vue'
 
-
   export default {
     name: 'Mybookmarks',
     components: {
