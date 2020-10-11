@@ -2,9 +2,7 @@
     <button type="button" class="cancel">Cancel</button>
 </template>
 
-
 <style lang="scss">
-
     @import '@/assets/styles/variables.scss';
 
     .cancel {
@@ -13,5 +11,4 @@
         color: $primaryColor;
         margin-top: $biggerMarginBottom;
     }
-
 </style>

@@ -57,7 +57,6 @@
 
 
 <script>
-
     export default {
         name: 'Card',
         methods: {
@@ -83,12 +82,10 @@
             }
         }
     }
-  
 </script>
 
-
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+    @import '@/assets/styles/variables.scss';
 
     textarea {
         width: 100%;
@@ -99,7 +96,5 @@
         &::placeholder {
             padding: 10px 0 0 10px;
         }
-    }
-
-
+    }   
 </style>

@@ -89,7 +89,6 @@
 
 
 <script>
-
     export default {
         name: 'Card',
         methods: {
@@ -115,12 +114,10 @@
             }
         }
     }
-  
 </script>
 
-
 <style lang="scss">
-@import '@/assets/styles/variables.scss';
+    @import '@/assets/styles/variables.scss';
 
     .shadow {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 

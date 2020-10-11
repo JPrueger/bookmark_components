@@ -15,14 +15,12 @@
 </template>
 
 <script>
-import OverviewHasReadIt from '@/components/OverviewHasReadIt.vue'
+    import OverviewHasReadIt from '@/components/OverviewHasReadIt.vue'
 
-export default {
-    name: 'Profile',
-    components: {
-        OverviewHasReadIt,
+    export default {
+        name: 'Profile',
+        components: {
+            OverviewHasReadIt,
+        }
     }
-}
-
-
 </script>

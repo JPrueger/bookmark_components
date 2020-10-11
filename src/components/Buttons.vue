@@ -1,12 +1,9 @@
 <template>
     <button type="button" class="cancel">Cancel</button>
-
     <button type="button">Submit</button>
 </template>
 
-
 <style lang="scss">
-
     @import '@/assets/styles/variables.scss';
 
     button {
@@ -31,5 +28,4 @@
         color: $primaryColor;
         margin-top: $biggerMarginBottom;
     }
-
 </style>

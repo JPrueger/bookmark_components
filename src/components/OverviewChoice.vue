@@ -28,16 +28,14 @@
 </template>
 
 <script>
+  import Card from '@/components/Card.vue'
 
-    import Card from '@/components/Card.vue'
+  export default {
+      name: 'Mybookmarks', 
 
-    export default {
-        name: 'Mybookmarks', 
-
-        components: {
-            Card
-        },
-        
-    }       
+      components: {
+          Card
+      }, 
+  }       
 </script>
 

@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import OverviewChoice from '@/components/OverviewChoice.vue'
+  import OverviewChoice from '@/components/OverviewChoice.vue'
 
-export default {
-  name: 'Mybookmarks',
-  components: {
-    OverviewChoice,
+  export default {
+    name: 'Mybookmarks',
+    components: {
+      OverviewChoice,
+    }
   }
-}
 </script>

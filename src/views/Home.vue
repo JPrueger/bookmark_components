@@ -66,12 +66,9 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import PostListing from '@/components/Posts/PostListing.vue'
-
-export default {
-  name: 'Home',
-  components: {
+  export default {
+    name: 'Home',
+    components: {
+    }
   }
-}
 </script>

@@ -30,7 +30,6 @@
 </template>
 
 <script>
-
     import ButtonLogin from '@/components/ButtonLogin.vue'
 
     export default {
@@ -39,6 +38,5 @@
             ButtonLogin,
         }
     }
-
 </script>
     

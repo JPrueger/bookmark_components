@@ -51,8 +51,7 @@
 </template>
 
 <script>
-
-import ButtonSubmit from '@/components/ButtonSubmit.vue'
+    import ButtonSubmit from '@/components/ButtonSubmit.vue'
     import ButtonCancel from '@/components/ButtonCancel.vue'
 
     export default {
@@ -62,5 +61,4 @@ import ButtonSubmit from '@/components/ButtonSubmit.vue'
             ButtonCancel
         }
     }
-
 </script>

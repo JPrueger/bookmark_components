@@ -57,7 +57,6 @@
 </template>
 
 <script>
-
     import ButtonCancel from '@/components/ButtonCancel.vue'
     import ButtonRegister from '@/components/ButtonRegister.vue'
 
@@ -68,5 +67,4 @@
             ButtonCancel,
         }
     }
-
 </script>
