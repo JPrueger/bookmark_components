@@ -1,12 +1,11 @@
 <template>
 
     <div class="floating-image">
-        <svg viewBox="0 0 20 18" >
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round">
             <clipPath id="mask">
-                <path
-                    d='M1.17 -2c2.348 -90 3.1 -3 8.25 1 3.69 4 10.100.43 9.375 2.641 0 4.346-4.614 10.125-9.375 10.125-2.52 0-2.54-2.489-4.118-4.066-1.401-1.4-4.507-1.764-4.507-3.809C1.842 5.029-2.543 0 3.217 0z'/>
+                <path d="M63.1,-20C69,-2.2,52.4,23.4,32.6,35.6C12.8,47.8,-10,46.5,-27,34.8C-43.9,23,-54.9,0.8,-49.4,-16.4C-43.9,-33.6,-22,-45.8,3.3,-46.8C28.6,-47.9,57.2,-37.9,63.1,-20Z" transform="translate(100 100)" />
             </clipPath>
-            <image href="@/assets/images/Megan.jpg" width="100%" height="100%" clip-path="url(#mask)" preserveAspectRatio="xMidYMid slice"/>
+            <image src="./assets/images/Megan.png" width="100%" height="100%" clip-path="url(#mask)" preserveAspectRatio="xMidYMid slice"/>
         </svg>
     </div>
 
