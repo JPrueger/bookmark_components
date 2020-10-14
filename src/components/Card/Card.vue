@@ -118,4 +118,33 @@
         width: 100%;
         margin-bottom: $mainMarginBottom;
     }
+
+    .card {
+        margin-bottom: 35px;
+    }
+
+    @media (min-width: 600px){ 
+
+        .all_cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            margin-right: 10px;
+            flex-basis: 48%;
+        }
+
+    }
+
+    @media (min-width: 1000px){ 
+
+        .card {
+            margin-right: 10px;
+            flex-basis: 30%;
+        }
+        
+    }
+
 </style>

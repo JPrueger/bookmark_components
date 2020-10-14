@@ -21,8 +21,6 @@
 
         <div class="friends">
             <ProfileFriendsOverview></ProfileFriendsOverview>
-
-            <p>Lisa Stummer</p>
         </div>
 
     </div>
