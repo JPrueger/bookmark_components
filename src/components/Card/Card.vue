@@ -1,5 +1,4 @@
 <template>
-
     <div class="all_cards">
 
         <div class="card"> 
@@ -28,63 +27,8 @@
             </div>
         
         </div>
-        
-        <!-- <div class="card"> 
-
-        <div class="shadow">
-
-            <div class="collapsible">
-
-                <img src="@/assets/images/little_dragon_cover.jpg" alt="cover of current book the little dragon">
-
-                <p class="card-booktitle">Get together</p>
-                <p class="card-author">by Jane Doe</p>
-                <p class="card-fast-three-headline">Nina's fast three</p>
-                <p class="card-fast-three-content">surprising, loud, intense</p>
-                
-                <button v-on:click="expandButton">See personal recommendation</button>
-            
-                <div class="content">
-                    <p class="card-recommendation-teaser">Nina wants you to know</p>
-
-                    <p>Hi Lisa! When I read the book I totally thought about you, and I am pretty sure you’d like it. It takes place in the South of England in 1960. It is about getting to know your neighbors and inviting them to a get together in the upper district of St. Kilda. Definitely worth a read!
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        
-        </div>
-
-        <div class="card"> 
-
-        <div class="shadow">
-
-            <div class="collapsible">
-
-                <img src="@/assets/images/little_dragon_cover.jpg" alt="cover of current book the little dragon">
-
-                <p class="card-booktitle">Get together</p>
-                <p class="card-author">by Jane Doe</p>
-                <p class="card-fast-three-headline">Nina's fast three</p>
-                <p class="card-fast-three-content">surprising, loud, intense</p>
-                
-                <button v-on:click="expandButton">See personal recommendation</button>
-            
-                <div class="content">
-                    <p class="card-recommendation-teaser">Nina wants you to know</p>
-
-                    <p>Hi Lisa! When I read the book I totally thought about you, and I am pretty sure you’d like it. It takes place in the South of England in 1960. It is about getting to know your neighbors and inviting them to a get together in the upper district of St. Kilda. Definitely worth a read!
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        
-        </div> -->
 
     </div>
-
 </template>
 
 

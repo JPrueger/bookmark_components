@@ -5,10 +5,10 @@
 </template>
 
 <script>
-  import CardHasReadIt from '@/components/CardHasReadIt.vue'
+  import CardHasReadIt from '@/components/Card/CardHasReadIt.vue'
 
   export default {
-      name: 'Mybookmarks', 
+      name: 'ProfileHasReadIt', 
 
       components: {
           CardHasReadIt

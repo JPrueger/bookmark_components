@@ -51,8 +51,8 @@
 </template>
 
 <script>
-    import ButtonSubmit from '@/components/ButtonSubmit.vue'
-    import ButtonCancel from '@/components/ButtonCancel.vue'
+    import ButtonSubmit from '@/components/Button/ButtonSubmit.vue'
+    import ButtonCancel from '@/components/Button/ButtonCancel.vue'
 
     export default {
         name: 'Register',

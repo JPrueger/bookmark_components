@@ -16,10 +16,6 @@
 
     <div class="blob_bg">
 
-      <!-- <div class="bg_blob_left">
-          <img src="@/assets/images/bg_blob_left.svg" alt="background_blob">
-      </div> -->
-
       <div class="bg_blob_right">
           <img src="@/assets/images/bg_blob_right.svg" alt="background_blob">
       </div> 
@@ -60,7 +56,6 @@
     a {
       display:inline-block;
       padding:15px 20px;
-      color:$fontColor1;
       text-decoration:none;
       text-transform:uppercase;
 

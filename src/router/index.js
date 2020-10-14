@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Mybookmarks from "../views/Mybookmarks.vue";
+import MyBookmarks from "../views/MyBookmarks.vue";
 import Register from "../views/Register.vue";
 import Login from "../views/Login.vue";
 import SuggestBook_Step1 from "../views/SuggestBook_Step1.vue";
@@ -16,8 +16,8 @@ const routes = [
   },
   {
     path: "/my-bookmarks",
-    name: "Mybookmarks",
-    component: Mybookmarks,
+    name: "MyBookmarks",
+    component: MyBookmarks,
   },
   {
     path: "/register",

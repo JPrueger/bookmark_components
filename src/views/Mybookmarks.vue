@@ -12,21 +12,19 @@
 
     <h2>Your friends suggestions:</h2>
 
-    <OverviewChoice class="added_margin_bottom"></OverviewChoice>
+    <MyBookmarksSuggestions class="last_added_margin_bottom"></MyBookmarksSuggestions>
     
-    <OverviewChoice class="last_added_margin_bottom"></OverviewChoice>
-
   </div>
 </template>
 
 <script>
-  import OverviewChoice from '@/components/OverviewChoice.vue'
+  import MyBookmarksSuggestions from '@/components/MyBookmarksSuggestions.vue'
   import Searchbar from '@/components/Searchbar.vue'
 
   export default {
-    name: 'Mybookmarks',
+    name: 'MyBookmarks',
     components: {
-      OverviewChoice,
+      MyBookmarksSuggestions,
       Searchbar
     }
   }

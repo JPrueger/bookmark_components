@@ -1,5 +1,4 @@
 <template>
-
     <div class="home whole_content_wrapper">
 
         <h1>Lisa’s profile!</h1>
@@ -16,29 +15,28 @@
 
         <h3>What Lisa has read last</h3>
 
-        <OverviewHasReadIt class="added_margin_bottom"></OverviewHasReadIt>
+        <ProfileHasReadIt class="added_margin_bottom"></ProfileHasReadIt>
 
         <h3>Friends</h3>
 
         <div class="friends">
-            <ImageShapeBlobb></ImageShapeBlobb>
+            <ProfileFriendsOverview></ProfileFriendsOverview>
 
             <p>Lisa Stummer</p>
         </div>
-    </div>
 
+    </div>
 </template>
 
 <script>
-    import OverviewHasReadIt from '@/components/OverviewHasReadIt.vue'
-    import ImageShapeBlobb from '@/components/ImageShapeBlobb.vue'
-
+    import ProfileHasReadIt from '@/components/ProfileHasReadIt.vue'
+    import ProfileFriendsOverview from '@/components/ProfileFriendsOverview.vue'
 
     export default {
         name: 'Profile',
         components: {
-            OverviewHasReadIt,
-            ImageShapeBlobb
+            ProfileHasReadIt,
+            ProfileFriendsOverview
         }
     }
 </script>

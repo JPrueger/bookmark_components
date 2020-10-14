@@ -35,7 +35,7 @@
             background-color: white;
             padding: 0;
             margin: 0;
-            border-radius: 10px 0 0 10pxs;
+            border-radius: 10px 0 0 10px;
         }
 
         button {
