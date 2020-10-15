@@ -6,6 +6,7 @@ import Login from "../views/Login.vue";
 import SuggestBook_Step1 from "../views/SuggestBook_Step1.vue";
 import SuggestBook_Step2 from "../views/SuggestBook_Step2.vue";
 import Profile from "../views/Profile.vue";
+import NotFound from "../views/NotFound.vue";
 
 
 const routes = [
@@ -44,7 +45,12 @@ const routes = [
     name: "Profile",
     component: Profile,
   },
+  {
+    path: "/:catchAll(.*)",
+    component: NotFound
+  }
 ];
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
