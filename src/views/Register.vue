@@ -26,3 +26,13 @@
         }
     }
 </script>
+
+<style lang="scss">
+
+    .wrapper_form_content_card {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+</style>

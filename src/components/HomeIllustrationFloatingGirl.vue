@@ -45,7 +45,6 @@
     .st7,.st8{fill:#1e1e1e}
     .st8{fill:#28254c}
 
-
     .illustration_floating_girl {
         display: block;
         transform: translateX(-150px);

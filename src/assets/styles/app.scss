@@ -33,14 +33,14 @@ p {
 }
 
 h1 {
-    font-size: calc(60px + (45 - 60) * ((100vw - 200px) / (1600 - 300)));
+    font-size: calc(60px + (50 - 60) * ((100vw - 200px) / (1600 - 300)));
     line-height: calc(1em + (1.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
     margin-bottom: $headlineMarginBottom;
     max-width: 9ch;
 }
 
 h2 {
-    font-size: calc(25px + (25 - 25) * ((100vw - 200px) / (1600 - 300)));
+    font-size: calc(25px + (45 - 25) * ((100vw - 200px) / (1600 - 300)));
     line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
     margin-bottom: $headlineMarginBottom;
 }
@@ -121,7 +121,7 @@ a {
 
 // RESPONSIVE DESIGN
 
-@media (min-width: 600px){
+@media (min-width: 650px){
 
     h1 {
         min-width: 20ch;
@@ -134,13 +134,23 @@ a {
     #nav {
         padding-top: 40px;
     }
+
+    #nav, #footer {
+        padding-right: 50px;
+        padding-left: 50px;   
+    }
+
+    p {
+        max-width: 35ch;
+        margin-bottom: $biggestMarginBottom;
+    } 
     
 }
 
 @media (min-width: 1000px){
 
     h1 {
-        min-width: 20ch;
+        min-width: 30ch;
     } 
 
     .whole_content_wrapper {
@@ -150,5 +160,10 @@ a {
     #nav {
         padding-top: 40px;
     }
+
+    p {
+        max-width: 40ch;
+        margin-bottom: $biggestMarginBottom;
+    }   
     
 }

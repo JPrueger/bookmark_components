@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div id="nav" class="whole_content_wrapper wrapper_navigation">
+    <div id="nav" class="wrapper_navigation">
       <div>     
         <img src="@/assets/images/logo_bookmark.svg" alt="navigate back to homepage">
       </div>
@@ -18,6 +18,10 @@
 
       <div class="bg_blob_right">
           <img src="@/assets/images/bg_blob_right.svg" alt="background_blob">
+      </div> 
+
+      <div class="bg_blob_left">
+          <img src="@/assets/images/bg_blob_left.svg" alt="background_blob">
       </div> 
 
     </div>
@@ -43,11 +47,16 @@
     justify-content: space-between;
   }
 
+  #nav, #footer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   #nav {
 
     padding-top: 20px;
 
-    margin-bottom: $headlineMarginBottom;
+    margin-bottom: 70px;
 
     img {
       width: 100px;
