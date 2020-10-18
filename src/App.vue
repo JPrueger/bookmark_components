@@ -1,18 +1,7 @@
 <template>
   <div>
 
-    <div id="nav" class="wrapper_navigation">
-      <div>     
-        <img src="@/assets/images/logo_bookmark.svg" alt="navigate back to homepage">
-      </div>
-
-      <svg class="burger_icon" enable-background="new 0 0 45.3 38.2" viewBox="0 0 45.3 38.2" xmlns="http://www.w3.org/2000/svg"> 
-          <path d="m2.6 5.4h40.1c1.5 0 2.6-1.2 2.6-2.7s-1.2-2.7-2.6-2.7h-40.1c-1.4 0-2.6 1.2-2.6 2.7s1.2 2.7 2.6 2.7zm40.1 11h-40.1c-1.5 0-2.6 1.2-2.6 2.7s1.2 2.7 2.6 2.7h40.1c1.5 0 2.6-1.2 2.6-2.7s-1.1-2.7-2.6-2.7zm0 16.4h-40.1c-1.4 0-2.6 1.2-2.6 2.7s1.2 2.7 2.6 2.7h40.1c1.5 0 2.6-1.2 2.6-2.7s-1.1-2.7-2.6-2.7z"/>
-      </svg>   
-      <!-- <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/my-bookmarks">MyBookmarks</router-link> -->
-    </div>
+    <Navigation></Navigation>
 
     <div class="blob_bg">
 
@@ -38,6 +27,18 @@
   </div>
 </template>
 
+<script>
+
+    import Navigation from '@/components/Navigation.vue'
+
+    export default {
+        name: 'App',
+        components: {
+            Navigation
+        }
+    }
+</script>
+
 <style lang="scss" src="@/assets/styles/app.scss"></style>
 <style lang="scss">
   @import '@/assets/styles/variables.scss';
@@ -50,34 +51,6 @@
   #nav, #footer {
     padding-right: 20px;
     padding-left: 20px;
-  }
-
-  #nav {
-
-    padding-top: 20px;
-
-    margin-bottom: 70px;
-
-    img {
-      width: 100px;
-    }
-
-    a {
-      display:inline-block;
-      padding:15px 20px;
-      text-decoration:none;
-      text-transform:uppercase;
-
-      &:hover,
-      &.router-link-active {
-        font-weight: 900;
-        text-decoration: underline;
-      }
-    }
-
-    .burger_icon {
-      width: 50px;
-    }
   }
 
   #footer a {
