@@ -1,9 +1,9 @@
 <template>
     <div class="home whole_content_wrapper">
-      <h1>Error, 404!</h1>
-      <p>Sorry, we could not find the page you where looking for!</p>
+      <h1>Oops!</h1>
+      <h2>404 - page not found!</h2>
 
-      <p>But you can look for our author of the month beneath one of the shapes below. Just click on them to reveal whats behind!</p>
+      <p>The page you are looking for might have been removed, had its name changed or is temporarily unavailbale.</p>
 
       <div></div>
       <Game></Game>

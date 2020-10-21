@@ -7,6 +7,8 @@ import SuggestBook_Step1 from "../views/SuggestBook_Step1.vue";
 import SuggestBook_Step2 from "../views/SuggestBook_Step2.vue";
 import Profile from "../views/Profile.vue";
 import NotFound from "../views/NotFound.vue";
+import AuthorOfTheMonth from "../views/AuthorOfTheMonth.vue";
+
 
 
 const routes = [
@@ -48,6 +50,11 @@ const routes = [
   {
     path: "/:catchAll(.*)",
     component: NotFound
+  },
+  {
+    path: "/author-of-the-month",
+    name: "AuthorOfTheMonth",
+    component: AuthorOfTheMonth,
   }
 ];
 

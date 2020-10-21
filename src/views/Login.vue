@@ -1,11 +1,10 @@
 <template>
     <div class="whole_content_wrapper">
-        <h1>Login here!</h1>
         
         <div class="wrapper_form_content_card">
+            <h1>Login here!</h1>
 
             <LoginForm></LoginForm>
-
         </div>
     </div>
 </template>
