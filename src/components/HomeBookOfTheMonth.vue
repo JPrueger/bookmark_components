@@ -13,7 +13,7 @@
     }
 
     .bg_blob_book_of_the_month {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         display: block;
         z-index: -1;
@@ -26,7 +26,7 @@
         position: absolute;
         margin: 0 auto;
         display: block;
-        top: 30px;
+        top: 20px;
         left: 20%;
         margin-bottom: 30%;
     }
@@ -54,7 +54,7 @@
     @media (min-width: 1200px){
     
         .bg_blob_book_of_the_month {
-            width: 400px;
+            // width: 600px;
             position: absolute;
         }
 

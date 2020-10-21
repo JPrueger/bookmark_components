@@ -2,7 +2,9 @@
 
     <nav id="nav" class="wrapper_navigation">
       <div>     
-        <img src="@/assets/images/logo_bookmark.svg" alt="navigate back to homepage">
+        <router-link class="nav_link" to="/">
+            <img class="logo" src="@/assets/images/logo_bookmark.svg" alt="navigate back to homepage">
+        </router-link>
       </div>
 
       <div class="hamburger hamburger_icon">
@@ -13,19 +15,19 @@
 
       <ul class="navigation_content">
             <li>
-                <a href="#">my bookmarks</a>
+                <router-link class="nav_link" to="/my-bookmarks">my bookmarks</router-link>
             </li>
 
             <li>
-                <a href="#">suggest book</a>
+                <router-link class="nav_link" to="/suggest-book-step-1">suggest book</router-link>
             </li>
 
             <li>
-                <a href="#">register</a>
+                <router-link class="nav_link" to="/register">register</router-link>
             </li>
 
             <li>
-                <a href="#">login</a>
+                <router-link class="nav_link" to="/login">login</router-link>
             </li>
       </ul>  
    </nav>
@@ -37,6 +39,7 @@
     
     export default { 
         methods: {
+
         },
         
         mounted() { 
@@ -49,15 +52,15 @@
 
             // navigation_content in var deklarieren
             var navigation_content = document.querySelector('.navigation_content')
-            console.log(navigation_content)
+            // console.log(navigation_content)
 
             // hamburger_button in var deklarieren
             var hamburger_button = document.querySelector('.hamburger');
-            console.log(hamburger_button)
+            // console.log(hamburger_button)
 
             // erstes Span in var deklarieren
             var first_span = hamburger_button.getElementsByTagName('span') [0];
-            console.log(first_span)
+            // console.log(first_span)
 
             // erstes Span animieren
             timeline.to(first_span, 0.3, {
@@ -70,7 +73,7 @@
 
             // zweites Span in var deklarieren
             var second_span = hamburger_button.getElementsByTagName('span') [1];
-            console.log(second_span)
+            // console.log(second_span)
 
             // zweites Span animieren
             timeline.to(second_span, 0.2, {
@@ -79,7 +82,7 @@
 
             // drittes Span in var deklarieren
             var third_span = hamburger_button.getElementsByTagName('span') [2];
-            console.log(third_span)
+            // console.log(third_span)
 
             // drittes Span animieren
             timeline.to(third_span, 0.3, {
@@ -102,9 +105,19 @@
                 timeline.reversed() ? timeline.play() : timeline.reverse();            
             });
 
-            // document.querySelector('.hamburger_icon').addEventListener("click", function () {
-            //     timeline.reverse();
-            // });
+            // damit sich die Navigation auch nach einem Klick auf einen Menupunkt schließt, müssen alle Nav Punkte in einer var deklariert werden
+            var all_navigation_points = document.querySelectorAll('.nav_link');
+
+            // mittels for Schleife alle Nav Punkte durchgehen und Click event triggern
+            for(var i = 0; i < all_navigation_points.length; i++){
+
+                all_navigation_points[i].addEventListener("click", function (event) {
+                    event.preventDefault();
+                    // timeline.reversed() ? timeline.play() : timeline.reverse();  
+                    timeline.play() ? timeline.reverse() : timeline.reversed();            
+          
+                });
+            }
 
         },
             
@@ -122,8 +135,9 @@
 
     img {
       width: 100px;
-    }
-    
+    } 
+
+
     ul {
         position: absolute;
         top: 100px;
@@ -140,6 +154,7 @@
             color: black;
             // padding: 0;
             padding: 10px 0 10px 0;
+
         }
         
         li {
@@ -150,7 +165,7 @@
     }
 
 
-    a {
+    .navigation_content a {
         display: inline-block;
         padding: 15px 20px;
         text-decoration: none;

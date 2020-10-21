@@ -28,7 +28,7 @@
                 </clipPath>
                 <image width="100%" height="100%" clip-path="url(#mask)" preserveAspectRatio="xMidYMid slice" href="@/assets/images/Lauren.jpg" />
             </svg>
-            <p>Lauren Watkins</p>
+            <p>Lauren Watke</p>
         </div> 
    </div>
 
