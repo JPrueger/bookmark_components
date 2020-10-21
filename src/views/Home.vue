@@ -1,12 +1,17 @@
 <template>
   <div class="home whole_content_wrapper">
-   
-    <h1>Need a new book?</h1>
+    <div class="wrapper_floating_girl">
 
-    <p>We’ve got you covered … well, actually your friends do. See all their recommendations about all kind of books what you have to read next. Keep your list clear and tick off each book you’ve read!
-    </p>
+      <div>
+        <h1>Need a new book?</h1>
 
-    <HomeIllustrationFloatingGirl></HomeIllustrationFloatingGirl>
+        <p>We’ve got you covered … well, actually your friends do. See all their recommendations about all kind of books what you have to read next. Keep your list clear and tick off each book you’ve read!
+        </p>
+      </div>
+
+      <HomeIllustrationFloatingGirl></HomeIllustrationFloatingGirl>
+
+    </div>
 
     <h2>Our book of the month!</h2> 
     
@@ -71,6 +76,17 @@
       display: flex;
       justify-content: space-between;
       margin-top: 10%;
+    }
+
+    .illustration_floating_girl {
+      width: 55%;
+      transform: translateY(10%);
+      // top: 20%;
+    }
+
+    .wrapper_floating_girl {
+      display: flex;
+      margin-bottom: 80px;
     }
 
   }

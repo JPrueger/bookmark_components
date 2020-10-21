@@ -29,6 +29,10 @@
         border: 1px solid grey;
         border-radius: 10px;
 
+        svg {
+            transform: translateX(15px);
+        }
+
         input, button {
             display: block;
             border: none;
@@ -40,6 +44,7 @@
 
         button {
             border-radius: 0 10px 10px 0;
+            // flex-direction: end;
         }
 
         .searchTerm {
@@ -63,6 +68,15 @@
         }
 
         margin-bottom: $biggestMarginBottom;
+    }
+
+
+    @media (min-width: 1000px) {
+
+        .wrapper_searchbar {
+            max-width: 500px;
+        }
+        
     }
 
 </style>

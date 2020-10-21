@@ -17,12 +17,7 @@
 
     <router-view/>
 
-    <div id="footer" class="whole_content_wrapper">
-      <a href="#">login</a>
-      <a href="#">terms of service</a>
-      <a href="#">privacy policy</a>
-      <a href="#">© 2020 bookmark</a>
-    </div>
+    <Footer></Footer>
 
   </div>
 </template>
@@ -30,11 +25,14 @@
 <script>
 
     import Navigation from '@/components/Navigation.vue'
+    import Footer from '@/components/Footer.vue'
+
 
     export default {
         name: 'App',
         components: {
-            Navigation
+            Navigation,
+            Footer
         }
     }
 </script>
@@ -48,20 +46,9 @@
     justify-content: space-between;
   }
 
-  #nav, #footer {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  #footer a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    margin-bottom: 50px;
-    
-
-    &:last-child {
-      margin-bottom: 70px;
+  @media (min-width: 750px){
+    #nav ul {
+        top: 13%;
     }
   }
 

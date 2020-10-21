@@ -127,67 +127,63 @@
 <style lang="scss">
     @import '@/assets/styles/variables.scss';
 
-   #nav {
+    #nav {
 
-    padding-top: 20px;
+        padding-top: 20px;
+        margin-bottom: 70px;
 
-    margin-bottom: 70px;
-
-    img {
-      width: 100px;
-    } 
+        img {
+        width: 100px;
+        } 
 
 
-    ul {
-        position: absolute;
-        top: 100px;
-        padding: 0 20px 0 20px;
-        width: 100vw;
-        left: -100%;
-        height: 100vh;
-        background-color: white;
-        z-index: 3;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 4px 3px rgba(0, 0, 0, 0.24); 
+        ul {
+            position: absolute;
+            top: 15%;
+            padding: 0 20px 0 20px;
+            width: 100%;
+            left: -110%;
+            height: 100vh;
+            background-color: white;
+            z-index: 3;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 4px 3px rgba(0, 0, 0, 0.24); 
 
-        a {
-            font-size: 25px;
-            color: black;
-            // padding: 0;
-            padding: 10px 0 10px 0;
-
+            a {
+                font-size: 25px;
+                color: black;
+                padding: 10px 0 10px 0;
+            }
+            
+            li {
+                list-style: none;   
+                color: white;
+                border-bottom: 1px solid black;
+            }
         }
-        
-        li {
-            list-style: none;   
-            color: white;
-            border-bottom: 1px solid black;
+
+        .navigation_content a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            &:hover,
+            &.router-link-active {
+                font-weight: 900;
+                text-decoration: underline;
+            }
+        }
+
+        .hamburger span {
+            display: block;
+            margin-bottom: 10px;
+            height: 8px;
+            width: 50px;
+            color: red;
+            background-color: black;
+            border-radius: 5px;
         }
     }
-
-
-    .navigation_content a {
-        display: inline-block;
-        padding: 15px 20px;
-        text-decoration: none;
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-        &:hover,
-        &.router-link-active {
-            font-weight: 900;
-            text-decoration: underline;
-        }
-    }
-
-    .hamburger span {
-        display: block;
-        margin-bottom: 10px;
-        height: 8px;
-        width: 50px;
-        color: red;
-        background-color: black;
-        border-radius: 5px;
-    }
-  }
 
 </style>

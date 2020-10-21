@@ -37,8 +37,6 @@
             width: 55%;
             margin: 0;
             margin-bottom: 100px;
-
-            // left: 5%;
         }
 
         .cover_book_of_the_month {
@@ -54,7 +52,7 @@
     @media (min-width: 1200px){
     
         .bg_blob_book_of_the_month {
-            // width: 600px;
+            width: 430px;
             position: absolute;
         }
 

@@ -40,9 +40,10 @@ h1 {
 }
 
 h2 {
-    font-size: calc(25px + (45 - 25) * ((100vw - 200px) / (1600 - 300)));
+    font-size: calc(40px + (55 - 40) * ((100vw - 200px) / (1600 - 300)));
     line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
     margin-bottom: $headlineMarginBottom;
+    max-width: 11ch;
 }
 
 
@@ -125,7 +126,7 @@ a {
 @media (min-width: 650px){
 
     h1 {
-        // min-width: 20ch;
+        max-width: 20ch;
     } 
 
     .whole_content_wrapper {
@@ -151,7 +152,7 @@ a {
 @media (min-width: 1000px){
 
     h1 {
-        min-width: 30ch;
+        max-width: 13ch;
     } 
 
     .whole_content_wrapper {
