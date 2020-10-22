@@ -1,10 +1,19 @@
 <template>
 
     <div id="footer" class="whole_content_wrapper">
-      <a href="#">login</a>
-      <a href="#">terms of service</a>
-      <a href="#">privacy policy</a>
-      <a href="#">© 2020 bookmark</a>
+        <router-link class="nav_link" to="/login">
+            login
+        </router-link>
+
+        <router-link class="nav_link" to="/test">
+            terms of service
+        </router-link>
+
+        <router-link class="nav_link" to="/login">
+            privacy policy
+        </router-link>
+
+        <p> © 2020 bookmark </p>
     </div>
 
 </template>
@@ -30,6 +39,10 @@
         &:last-child {
             margin-bottom: 70px;
         }
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     @media (min-width: 750px){
@@ -52,7 +65,7 @@
                 border-right: none;
             }
 
-            a:last-child {
+            p {
                 margin-bottom: 0;
                 border-right: none;
                 margin-left: auto;

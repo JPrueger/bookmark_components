@@ -29,18 +29,18 @@
 
                 <div>
                     <label for="fastThree">What three words describe your book the best?</label> <br>
-                    <input id="fastThree" type="text" value="" name="fastThree" placeholder="Surprising, loud, intense">
+                    <input class="input" id="fastThree" type="text" value="" name="fastThree" placeholder="Surprising, loud, intense">
                 </div>
 
                 <label for="bookReview">Tell your friend something about it</label>
-                <textarea id="bookReview" name="bookReview" rows="4" cols="50" placeholder="What did you like the best?">
+                <textarea class="input" id="bookReview" name="bookReview" rows="4" cols="50" placeholder="What did you like the best?">
                 </textarea>
 
                 <label for="uploadImage" class="file_upload">What does the book look like?</label>
-                <input type="file" id="uploadImage" name="uploadImage">
+                <input class="input" type="file" id="uploadImage" name="uploadImage">
 
-                <ButtonSubmit></ButtonSubmit>
                 <ButtonCancel></ButtonCancel>
+                <ButtonSubmit></ButtonSubmit>
 
             </form>
 
@@ -63,3 +63,11 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+
+   #uploadImage {
+       margin-bottom: 50px;
+   }
+
+</style>

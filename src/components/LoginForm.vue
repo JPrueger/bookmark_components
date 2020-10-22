@@ -2,12 +2,12 @@
     <form action="">
         <div>
             <label for="email">E-Mail Address (will be your username)</label> <br>
-            <input id="email" type="email" value="" name="email" placeholder="john.doe@gmail.com">
+            <input class="input" id="email" type="email" value="" name="email" placeholder="john.doe@gmail.com">
         </div>
 
         <div>
             <label for="password">Password:</label> <br>
-            <input id="password" type="password" value="" name="password" placeholder="********">
+            <input class="input" id="password" type="password" value="" name="password" placeholder="********">
         </div>
 
         <ButtonLogin></ButtonLogin>
@@ -26,3 +26,12 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+
+   #password {
+       margin-bottom: 50px;
+   }
+
+</style>
+

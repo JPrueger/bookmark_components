@@ -2,7 +2,7 @@
     <button type="button" class="cancel">Cancel</button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '@/assets/styles/variables.scss';
 
     .cancel {
@@ -10,5 +10,13 @@
         border: 1.5px solid $primaryColor;
         color: $primaryColor;
         margin-top: $biggerMarginBottom;
+    }
+
+    button {  
+        &:before {
+            background-color: rgba(193,0,78,0.05);
+            
+            // tint($primaryColor, 10%);
+        }
     }
 </style>

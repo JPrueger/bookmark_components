@@ -15,13 +15,14 @@ form {
     label {
         font-size: calc(20px + (25 - 20) * ((100vw - 200px) / (1600 - 300)));
         line-height: calc(1em + (2.5 - 1) * ((100vw - 100px)/(1600 - 300)));  
+        transition: all .3s ease-in-out;
     }
 
     input[type="text"],
     input[type="email"],
     input[type="password"],
     input[type="tel"] {
-        // width: 100%;
+        width: 100%;
         border: 1px solid grey;
         border-radius: 10px;
         height: 40px;
@@ -29,21 +30,34 @@ form {
         margin-top: 5px;
     }
 
+    .input {
+        transition: all .3s ease-in-out;
+        text-indent: 10px;
+    }
+
+    .input:focus,
+    .input:active {
+        padding-left: 5px;
+        color: $primaryColor;
+        text-indent: 0;
+        background: white;
+    }
+
     textarea {
         width: 100%;
         border: 1px solid grey;
         border-radius: 10px;
         margin-bottom: $biggestMarginBottom;
+
+        &::placeholder {
+            padding-top: 5px;
+        }
     }
 
     margin-bottom: $biggerMarginBottom;
 
     .label_hide_all_bookcovers {
         margin-right: 10px;
-    }
-
-    ::placeholder {
-        padding-left: 10px;
     }
 
     .find_friend {
@@ -64,11 +78,9 @@ form {
     }
 
     @media (min-width: 1000px) {
-
         .categoy {
             max-width: 500px;
         }
-        
     }
 
 }

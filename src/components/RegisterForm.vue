@@ -3,27 +3,27 @@
 
         <div>
             <label for="email">E-Mail Address (will be your username)</label> <br>
-            <input id="email" type="email" value="" name="email" placeholder="john.doe@gmail.com">
+            <input class="input" id="email" type="email" value="" name="email" placeholder="john.doe@gmail.com">
         </div>
 
         <div>
             <label for="firstname">First Name:</label> <br>
-            <input id="firstname" type="text" value="" name="firstname" placeholder="John">
+            <input class="input" id="firstname" type="text" value="" name="firstname" placeholder="John">
         </div>
 
         <div>
             <label for="lastname">Last Name:</label> <br>
-            <input id="lastname" type="text" value="" name="firstname" placeholder="Doe">
+            <input class="input" id="lastname" type="text" value="" name="firstname" placeholder="Doe">
         </div>
 
         <div>
             <label for="password">Password:</label> <br>
-            <input id="password" type="password" value="" name="password" placeholder="********">
+            <input class="input" id="password" type="password" value="" name="password" placeholder="********">
         </div>
 
         <div>
             <label for="repeatpassword">Please repeat Password:</label> <br>
-            <input id="repeatpassword" type="password" value="" name="repeatpassword" placeholder="********">
+            <input class="input" id="repeatpassword" type="password" value="" name="repeatpassword" placeholder="********">
         </div>
 
         <h2>Frankly speaking!</h2>
@@ -54,3 +54,13 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+
+   #repeatpassword, #checkbox_hide_bookcovers {
+       margin-bottom: 50px;
+   }
+
+</style>
+
+

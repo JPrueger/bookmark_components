@@ -26,17 +26,17 @@
 
                 <div>
                     <label for="isbn">Type in ISBN</label> <br>
-                    <input id="isbn" type="text" value="" name="isbn" placeholder="9780136019743">
+                    <input class="input" id="isbn" type="text" value="" name="isbn" placeholder="9780136019743">
                 </div>
 
                 <div>
                     <label for="author">Author</label> <br>
-                    <input id="author" type="text" value="" name="author" placeholder="Jane Doe">
+                    <input class="input" id="author" type="text" value="" name="author" placeholder="Jane Doe">
                 </div>
 
                 <div>
                     <label for="title">Title</label> <br>
-                    <input id="title" type="text" value="" name="title" placeholder="Get together">
+                    <input class="input" id="title" type="text" value="" name="title" placeholder="Get together">
                 </div>
 
                 <ButtonCancel></ButtonCancel>
@@ -62,3 +62,11 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+
+   #title {
+       margin-bottom: 50px;
+   }
+
+</style>
