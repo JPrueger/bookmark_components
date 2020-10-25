@@ -39,6 +39,14 @@
         <ButtonCancel></ButtonCancel>
         <ButtonRegister></ButtonRegister>
 
+        <p>Already registered? Login 
+            <a href="">
+                <router-link class="nav_link" to="/login">
+                    <b>here!</b>
+                </router-link>
+            </a>
+        </p>  
+
     </form>
 </template>
 

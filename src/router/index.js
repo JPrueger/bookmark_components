@@ -9,6 +9,7 @@ import Profile from "../views/Profile.vue";
 import NotFound from "../views/NotFound.vue";
 import AuthorOfTheMonth from "../views/AuthorOfTheMonth.vue";
 import TermsOfService from "../views/TermsOfService.vue";
+import PrivacyPolicy from "../views/PrivacyPolicy.vue";
 
 
 const routes = [
@@ -60,6 +61,11 @@ const routes = [
     path: "/terms-of-service",
     name: "TermsOfService",
     component: TermsOfService,
+  },
+  {
+    path: "/privacy-policy",
+    name: "PrivacyPolicy",
+    component: PrivacyPolicy,
   }
 ];
 

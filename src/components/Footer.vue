@@ -9,7 +9,7 @@
             terms of service
         </router-link>
 
-        <router-link class="nav_link" to="/login">
+        <router-link class="nav_link" to="/privacy-policy">
             privacy policy
         </router-link>
 
@@ -40,7 +40,7 @@
             text-decoration: none;
             color: black;
             display: block;
-            // margin-bottom: 50px;
+            margisn-bottom: 50px;
 
             &:last-child {
                 margin-bottom: 70px;
@@ -51,8 +51,6 @@
             }
         }
     }
-    
-        
     
 
     @media (min-width: 750px){

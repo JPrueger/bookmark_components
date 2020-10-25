@@ -12,7 +12,13 @@
 
         <ButtonLogin></ButtonLogin>
 
-        <p>No account yet? Register <a href="">here!</a></p>  
+        <p>No account yet? Register
+            <a href="">
+                <router-link class="nav_link" to="/register">
+                    <b>here!</b>
+                </router-link>
+            </a>
+        </p>  
     </form>
 </template>
 

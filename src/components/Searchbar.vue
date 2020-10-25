@@ -19,7 +19,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '@/assets/styles/app.scss';
 
     .wrapper_searchbar {
@@ -44,7 +44,20 @@
 
         button {
             border-radius: 0 10px 10px 0;
-            // flex-direction: end;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 100%;
+                    background-color: darken(blue, 10%);
+                    transition: all .3s;
+                    border-radius: 10px;
+                    z-index: -1;
+                }
+
         }
 
         .searchTerm {
@@ -61,18 +74,14 @@
         }
 
         svg {
-            // fill: $primaryColor;
             fill: black;
             height: 55%;
             position: relative;
         }
 
         margin-bottom: $biggestMarginBottom;
-    }
 
-    // &:before {
-    //     content: 0;
-    // }
+    }
 
     @media (min-width: 1000px) {
 

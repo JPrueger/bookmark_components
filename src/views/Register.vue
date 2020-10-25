@@ -8,8 +8,6 @@
 
             <RegisterForm></RegisterForm>
 
-            <p>Already registered? Login <a href="#">here!</a></p> 
-
         </div>
 
     </div>
