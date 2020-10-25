@@ -31,6 +31,9 @@
     }
 
     #footer {
+
+        margin-bottom: 30px;
+
         p {
             font-size: 22px;
         }

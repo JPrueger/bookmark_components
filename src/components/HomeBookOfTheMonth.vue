@@ -3,10 +3,26 @@
         <img class="bg_blob_book_of_the_month" src="@/assets/images/bg_blob_book_of_the_month.svg" alt="pink background of cover of the current book of the month!">
         <img class="cover_book_of_the_month" src="@/assets/images/extremely_loud.jpg" alt="cover of the current book of the month!">
     </div>
+
+    <div class="container_book_description">  
+        <h3>Author</h3>
+        <p>Jonathan Safran Foer</p>
+
+        <h3>Title</h3>
+        <p>Extremely Loud and Incredibly Close</p>
+
+        <h3>Description</h3>
+        <p>Oskar Schell, a nine-year-old boy, has not been happy since his dad died in the 9/11 terrorist attacks. Unbeknownst to anyone except for Oskar, on the day of the attacks, Oskar’s dad called the house five times. Oskar was home for the fifth call but couldn’t bring himself to pick up the phone. They never recovered his dad’s body and buried an empty casket at his funeral. Oskar is furious that his mom has started to spend time with a man named Ron and worries that she has begun to move on. Oskar suffers from extreme anxiety and imagines whimsical inventions in order to cope. 
+        </p>
+    </div>
 </template>
 
 <style lang="scss">
     @import '@/assets/styles/variables.scss';
+
+    .container_book_description {
+        flex-basis: 50%;
+    }
 
     .book_of_the_month {
         position: relative;
