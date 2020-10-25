@@ -22,7 +22,11 @@
       </select>
     </form>
 
-    <Card></Card>
+    <Card
+      v-for="suggestion in suggestions"
+      v-bind:key="suggestion.id"
+      v-bind:suggestion="suggestion"
+    ></Card>
 
   </div>
 </template>
@@ -31,11 +35,16 @@
   import Card from '@/components/Card/Card.vue'
 
   export default {
-      name: 'Mybookmarks', 
+    name: 'MyBookmarksSuggestions',
+    
+    // data: () => ({
+    //   suggestions: [],
+    // }),
 
-      components: {
-          Card
-      }, 
+    components: {
+        Card
+    }, 
+
   }       
 </script>
 

@@ -9,8 +9,8 @@
 
                     <img src="@/assets/images/little_dragon_cover.jpg" alt="cover of current book the little dragon">
 
-                    <p class="card-booktitle">Get together</p>
-                    <p class="card-author">by Jane Doe</p>
+                    <p class="card-booktitle">{{suggestion.title}}</p>
+                    <p class="card-author">{{suggestion.author}}</p>
                     <p class="card-headline">Nina's fast three</p>
                     <p class="card-content">surprising, loud, intense</p>
                 
@@ -35,6 +35,11 @@
 <script>
     export default {
         name: 'Card',
+
+        props: {
+            suggestion: Object,
+        },
+
         methods: {
             expandButton() {
                 let button = document.querySelectorAll(".collapsible");
