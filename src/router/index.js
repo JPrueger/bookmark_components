@@ -8,7 +8,7 @@ import SuggestBook_Step2 from "../views/SuggestBook_Step2.vue";
 import Profile from "../views/Profile.vue";
 import NotFound from "../views/NotFound.vue";
 import AuthorOfTheMonth from "../views/AuthorOfTheMonth.vue";
-
+import TermsOfService from "../views/TermsOfService.vue";
 
 
 const routes = [
@@ -55,6 +55,11 @@ const routes = [
     path: "/author-of-the-month",
     name: "AuthorOfTheMonth",
     component: AuthorOfTheMonth,
+  },
+  {
+    path: "/terms-of-service",
+    name: "TermsOfService",
+    component: TermsOfService,
   }
 ];
 

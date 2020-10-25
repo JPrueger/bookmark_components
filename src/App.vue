@@ -1,21 +1,27 @@
 <template>
   <div>
 
-    <Navigation></Navigation>
+    <div class="test">
 
-    <div class="blob_bg">
+      <Navigation></Navigation>
 
-      <div class="bg_blob_right">
-          <img src="@/assets/images/bg_blob_right.svg" alt="background_blob">
-      </div> 
+      <div class="blob_bg">
 
-      <div class="bg_blob_left">
-          <img src="@/assets/images/bg_blob_left.svg" alt="background_blob">
-      </div> 
+        <div class="bg_blob_right">
+            <img src="@/assets/images/bg_blob_right.svg" alt="background_blob">
+        </div> 
 
+        <div class="bg_blob_left">
+            <img src="@/assets/images/bg_blob_left.svg" alt="background_blob">
+        </div> 
+
+      </div>
+
+      <main>
+        <router-view/>
+      </main>
+    
     </div>
-
-    <router-view/>
 
     <Footer></Footer>
 
@@ -40,16 +46,13 @@
 <style lang="scss" src="@/assets/styles/app.scss"></style>
 <style lang="scss">
   @import '@/assets/styles/variables.scss';
-  
-  .wrapper_navigation {
-    display: flex;
-    justify-content: space-between;
+
+  .test {
+    min-height: calc(100vh - 70px);
   }
 
-  @media (min-width: 750px){
-    #nav ul {
-        top: 13%;
-    }
+  #footer {
+    height: 50px;
   }
 
 </style>

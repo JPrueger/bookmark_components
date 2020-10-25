@@ -5,7 +5,7 @@
             login
         </router-link>
 
-        <router-link class="nav_link" to="/test">
+        <router-link class="nav_link" to="/terms-of-service">
             terms of service
         </router-link>
 
@@ -30,20 +30,30 @@
         padding-left: 20px;
     }
 
-    #footer a {
-        text-decoration: none;
-        color: black;
-        display: block;
-        margin-bottom: 50px;
-
-        &:last-child {
-            margin-bottom: 70px;
+    #footer {
+        p {
+            font-size: 22px;
         }
 
-        &:hover {
-            text-decoration: underline;
+        a {
+            font-size: 22px;
+            text-decoration: none;
+            color: black;
+            display: block;
+            // margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 70px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
+    
+        
+    
 
     @media (min-width: 750px){
 
@@ -51,7 +61,7 @@
             display: flex;
          
             a {
-                height: 40px;
+                height: 30px;
                 padding: 0 50px 0 50px;
                 border-right: 1px solid black;
                 // transform: translateY(10px);           

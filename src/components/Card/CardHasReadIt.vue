@@ -23,6 +23,7 @@
                         <p class="card-teaser">Want to say something about it? </p>
                         <textarea id="bookReview" name="bookReview" rows="4" cols="50" placeholder="What did you like the best?">
                         </textarea>
+                        <button class="added_margin_bottom">Post Comment!</button>
 
                         <div class="wrapper_comments_has_read_it">
                             <div class="comment_has_read_it"> <p class="card-teaser">Cory said:</p>

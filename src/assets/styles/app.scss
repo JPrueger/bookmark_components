@@ -9,6 +9,10 @@
 @import './form_content_card.scss';
 
 
+body {
+    min-width: 310px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -152,7 +156,7 @@ a {
 @media (min-width: 1000px){
 
     h1 {
-        max-width: 13ch;
+        max-width: 14ch;
     } 
 
     .whole_content_wrapper {

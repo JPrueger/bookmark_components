@@ -70,6 +70,9 @@
         margin-bottom: $biggestMarginBottom;
     }
 
+    // &:before {
+    //     content: 0;
+    // }
 
     @media (min-width: 1000px) {
 

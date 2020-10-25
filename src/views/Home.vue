@@ -3,10 +3,21 @@
     <div class="wrapper_floating_girl">
 
       <div>
-        <h1>Need a new book?</h1>
+        <h1>Looking for a new book?</h1>
+        <!-- <h1>Wondering what to read next?</h1> -->
 
-        <p>We’ve got you covered … well, actually your friends do. See all their recommendations about all kind of books what you have to read next. Keep your list clear and tick off each book you’ve read!
+
+        <p>We’ve got you covered! Well, actually your friends do. Get yourself an overview of all recommendations your friends gave you about the book you need to read next. Keep your list clear and tick off each book you’ve read!
         </p>
+
+        <!-- <p>We’ve got you covered! Well, actually your friends do. Saving all recommendations your friends gave you about the book you need to read next. Keep your list clear and tick off each book you’ve read! -->
+
+
+        <!-- <p>We’ve got you covered! Well, actually your friends do. See all their recommendations about all kind of books what you have to read next. Keep your list clear and tick off each book you’ve read! -->
+
+
+        <p>All you need to do is register <a href="/register">here!</a></p>
+
       </div>
 
       <HomeIllustrationFloatingGirl></HomeIllustrationFloatingGirl>
@@ -79,8 +90,8 @@
     }
 
     .illustration_floating_girl {
-      width: 55%;
-      transform: translateY(10%);
+      width: 75%;
+      // transform: translateY(10%);
       // top: 20%;
     }
 

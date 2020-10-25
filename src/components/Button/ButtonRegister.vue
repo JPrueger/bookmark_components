@@ -1,9 +1,8 @@
 <template>
     <button type="button">Register</button>
-    
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '@/assets/styles/variables.scss';
 
     // border: 1.5px solid $primaryColor;

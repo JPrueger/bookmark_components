@@ -1,23 +1,32 @@
 <template>
     <div class="home whole_content_wrapper">
-      <h1>Oops!</h1>
-      <h2>404 - page not found!</h2>
+      <div>
+        <h1>Oops!</h1>
+        <h2>404 - page not found!</h2>
 
-      <p>The page you are looking for might have been removed, had its name changed or is temporarily unavailbale.</p>
+        <p>The page you are looking for might have been removed, had its name changed or is temporarily unavailbale.</p>
+      </div>
 
-      <div></div>
-      <Game></Game>
-
+      <!-- <div></div> -->
+      <NotFoundHiddenAuthor></NotFoundHiddenAuthor>
     </div>
 </template>
 
 <script>
-  import Game from '@/components/Game.vue'
+  import NotFoundHiddenAuthor from '@/components/NotFoundHiddenAuthor.vue'
 
   export default {
         name: 'NotFound',
         components: {
-            Game
+            NotFoundHiddenAuthor
         }
     }
 </script>
+
+<style style="scss" scoped>
+
+  .whole_content_wrapper {
+    margin-bottom: 150px;
+  }
+
+</style>
