@@ -15,8 +15,6 @@
     button {  
         &:before {
             background-color: rgba(193,0,78,0.05);
-            
-            // tint($primaryColor, 10%);
         }
     }
 </style>

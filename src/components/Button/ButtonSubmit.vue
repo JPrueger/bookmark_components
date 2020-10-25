@@ -4,4 +4,4 @@
 
 <style lang="scss">
     @import '@/assets/styles/variables.scss';
-</style>
+</style>    
