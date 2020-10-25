@@ -20,7 +20,6 @@
 <script>
   import MyBookmarksSuggestions from '@/components/MyBookmarksSuggestions.vue'
   import Searchbar from '@/components/Searchbar.vue'
-  // import SuggestBook_Step1 from '@/views/SuggestBook_Step1.vue'
 
   export default {
     name: 'MyBookmarks',

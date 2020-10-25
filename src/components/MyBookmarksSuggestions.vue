@@ -22,29 +22,70 @@
       </select>
     </form>
 
-    <Card
-      v-for="suggestion in suggestions"
-      v-bind:key="suggestion.id"
-      v-bind:suggestion="suggestion"
-    ></Card>
+    <div class="wrapper_cards"> 
+      <Card
+        v-for="suggestion in suggestions"
+        v-bind:key="suggestion.id"
+        v-bind:suggestion="suggestion"
+      />
+    </div>
 
   </div>
 </template>
 
 <script>
   import Card from '@/components/Card/Card.vue'
+  import postDataService from '@/services/postDataService';
 
   export default {
     name: 'MyBookmarksSuggestions',
-    
-    // data: () => ({
-    //   suggestions: [],
-    // }),
+
+    data: () => ({
+      newSuggestion: {
+          author:'',
+          title: '',
+      },
+      suggestions: [],
+    }),
 
     components: {
-        Card
+      Card
     }, 
+
+    methods: {
+      createSuggestion: function(e) {
+        e.preventDefault();
+
+        postDataService.store(this.newSuggestion)
+          .then((newSuggestionList) => {
+            this.suggestions = newSuggestionList;
+          });
+        this.newSuggestion = {
+          author: '',
+          title: '',
+        };
+      }
+    },
+
+    created() {
+      postDataService.index()
+
+      .then((allSuggestions) => {
+        this.suggestions = allSuggestions;
+      });
+    }
 
   }       
 </script>
+
+<style lang="scss">
+
+  .wrapper_cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: space-between;
+  }
+
+</style>
 

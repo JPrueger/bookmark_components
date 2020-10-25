@@ -8,8 +8,7 @@
 
             <p>Step 1 out of 2</p>
 
-            <!-- VueJS -->
-            <form action="google.com" v-on:submit="createSuggestion">
+            <form action="#" v-on:submit="createSuggestion">
 
                 <select name="find_friend" class="find_friend">
                     <option value="" selected disabled hidden>Find friend here</option>
@@ -25,19 +24,17 @@
                 <p>By letting us know the ISBN of your book, we can fill out the base information quickly. If you don’t know the ISBN please just fill in a few information manually. 
                 </p>
 
-                <!-- <div>
+                <div>
                     <label for="isbn">Type in ISBN</label> <br>
-                    <input class="input" id="isbn" type="text" name="isbn" placeholder="9780136019743">
-                </div> -->
+                    <input class="input" v-model="newSuggestion.isbn" id="isbn" type="text" name="isbn" placeholder="9780136019743">
+                </div>
 
                 <div>
-                    <!-- VueJS -->
                     <label for="author">Author</label> <br>
                     <input class="input" v-model="newSuggestion.author" id="author" type="text" name="author" placeholder="Jane Doe">
                 </div>
 
                 <div>
-                    <!-- VueJS -->
                     <label for="title">Title</label> <br>
                     <input class="input" v-model="newSuggestion.title" id="title" type="text" name="title" placeholder="Get together">
                 </div>
@@ -56,8 +53,6 @@
 </template>
 
 <script>
-    // import ButtonSubmit from '@/components/Button/ButtonSubmit.vue'
-    // import ButtonCancel from '@/components/Button/ButtonCancel.vue'
 
     import postDataService from '@/services/postDataService';
 
@@ -67,21 +62,23 @@
             newSuggestion: {
                 author:'',
                 title: '',
+                isbn: '',
             },
             suggestions: [],
         }),
-        components: {
-            // ButtonSubmit,
-            // ButtonCancel
+    
+        props: {
+            suggestion: Object,
         },
+
         methods: {
             createSuggestion: function(e) {
                 e.preventDefault();
 
                 postDataService.store(this.newSuggestion)
-                                .then((newSuggestionList) => {
-                                    this.suggestions = newSuggestionList;
-                                });
+                    .then((newSuggestionList) => {
+                        this.suggestions = newSuggestionList;
+                    });
                 this.newSuggestion = {
                     author: '',
                     title: '',
