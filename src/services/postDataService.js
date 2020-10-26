@@ -35,6 +35,30 @@ const postDataService = {
     });
   },
 
+  storeRegistration: (postData) => {
+    // ACHTUNG: wir verwenden hier Promise nur, um aus LocalStorage auch ein "Promise" zu machen (damit haben wir dann sowohl bei Laravel, als auch LocalStorage genau den gleichen Funktionsaufruf)
+    // würden wir nicht beide Aufbauten gleichzeitig machen, könnte man sich das ganze Promise/resolve, ... sparen und es einfach direkt wieder zurückgeben
+    return new Promise((resolve) => {
+      // holen wir uns die aktuellen posts aus localStorage
+      const allRegistrations = JSON.parse(localStorage.getItem("registrations")) || [];
+
+      // jeder Eintrag benötigt eine eindeutige id
+      // normalerweise macht das Laravel automatisch. Mit Localstorage müssen wir uns hier händisch etwas ausdenken, dass sich nie wiederholen kann bzw. eher unwahrscheinlich ist -> zufällige Zahl
+      postData.id = Math.random();
+
+      // nun fügen wir diesen neuen Post an das Ende all unserer Posts
+      allRegistrations.push(postData);
+
+      // speichere die Daten in localstorage
+      // Da localStorage nur "strings" speichern kann und keine echten Javascript Objekte, müssen wir es mit JSON.stringify in einen String verwandeln
+      localStorage.setItem("registrations", JSON.stringify(allRegistrations));
+
+      // gib die neu gespeicherten Daten (alle Posts inklusive dem Neuen) an das "Promise" zurück
+      return resolve(allRegistrations);
+    });
+  },
+
+
   /**
    *
    *
@@ -59,6 +83,21 @@ const postDataService = {
 
       // übergib sie mit resolve an das "Promise"
       return resolve(suggestions);
+    });
+  },
+
+  indexRegistration: () => {
+    return new Promise((resolve) => {
+      // hol die posts aus localStorage (und verwandel sie mit JSON.parse ) vom String wieder in ein Javascript Objekt
+      const registrations = JSON.parse(localStorage.getItem("registrations"));
+
+      // wenn noch nichts im localstorage ist -> würden wir "null" returnen. Wir wollen hier aber sichergehen, dass immer ein Array zurückgegeben wird. Daher setzen wir es in diesem Fall als leeres Array
+      if (!registrations) {
+        return [];
+      }
+
+      // übergib sie mit resolve an das "Promise"
+      return resolve(registrations);
     });
   },
 

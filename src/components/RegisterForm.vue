@@ -1,19 +1,20 @@
 <template>
-    <form action="">
+<!-- VueJS -->
+    <form action="#" v-on:submit="createRegistration" >
 
         <div>
             <label for="email">E-Mail Address (will be your username)</label> <br>
-            <input class="input" id="email" type="email" value="" name="email" placeholder="john.doe@gmail.com">
+            <input class="input" v-model="newRegistration.email" id="email" type="email" name="email" placeholder="john.doe@gmail.com">
         </div>
 
         <div>
             <label for="firstname">First Name:</label> <br>
-            <input class="input" id="firstname" type="text" value="" name="firstname" placeholder="John">
+            <input class="input" v-model="newRegistration.firstname" id="firstname" type="text" name="firstname" placeholder="John">
         </div>
 
         <div>
             <label for="lastname">Last Name:</label> <br>
-            <input class="input" id="lastname" type="text" value="" name="firstname" placeholder="Doe">
+            <input class="input" v-model="newRegistration.lastname" id="lastname" type="text" name="firstname" placeholder="Doe">
         </div>
 
         <div>
@@ -36,8 +37,10 @@
             <input type="checkbox" id="checkbox_hide_bookcovers" name="checkbox_hide_bookcovers" value="">
         </div>
 
-        <ButtonCancel></ButtonCancel>
-        <ButtonRegister></ButtonRegister>
+        <button type="submit">Submit!</button>
+
+        <!-- <ButtonCancel></ButtonCancel>
+        <ButtonRegister></ButtonRegister> -->
 
         <p>Already registered? Login 
             <a href="">
@@ -51,14 +54,56 @@
 </template>
 
 <script>
-    import ButtonCancel from '@/components/Button/ButtonCancel.vue'
-    import ButtonRegister from '@/components/Button/ButtonRegister.vue'
+    // import ButtonCancel from '@/components/Button/ButtonCancel.vue'
+    // import ButtonRegister from '@/components/Button/ButtonRegister.vue'
+
+    import postDataService from '@/services/postDataService';
+
 
     export default {
         name: 'RegisterForm',
+
+        data: () => ({
+            newRegistration: {
+                email: '',
+                firstname: '',
+                lastname: '',
+            },
+            registrations: [],
+        }),
+
+        props: {
+            registration: Object,
+        },
+
         components: {
-            ButtonRegister,
-            ButtonCancel
+            // ButtonRegister,
+            // ButtonCancel
+        },
+
+        methods: {
+            createRegistration: function (e) {
+                e.preventDefault();
+                // console.log("test");
+
+                postDataService.storeRegistration(this.newRegistration)
+                .then((newRegistrationList) => {
+                    this.registrations = newRegistrationList;
+                });
+                this.newRegistration = {
+                    email: '',
+                    firstname: '',
+                    lastname: '', 
+                };
+            } 
+        },
+
+        createdRegistration () {
+            postDataService.indexRegistration()
+
+            .then((allRegistrations) => {
+                this.registrations = allRegistrations;
+            });
         }
     }
 </script>
