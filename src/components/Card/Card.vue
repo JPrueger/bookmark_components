@@ -11,15 +11,13 @@
                 <p class="card-author">{{suggestion.author}}</p>
                 <p class="card-isbn">ISBN: {{suggestion.isbn}}</p>
                 <p class="card-headline">Nina's fast three</p>
-                <p class="card-content">surprising, loud, intense</p>
+                <p class="card-content">{{suggestion.fastThree}}</p>
             
                 <button v-on:click="expandButton">Read more!</button>
             
                 <div class="content">
-                    <p class="card-teaser">Nina wants you to know</p>
-
-                    <p>Hi Lisa! When I read the book I totally thought about you, and I am pretty sure you’d like it. It takes place in the South of England in 1960. It is about getting to know your neighbors and inviting them to a get together in the upper district of St. Kilda. Definitely worth a read!
-                    </p>
+                    <p class="card-teaser">Nina's wants you to know</p>
+                    <p>{{suggestion.bookReview}}</p>
                 </div>
             </div>
 
@@ -35,6 +33,7 @@
 
         props: {
             suggestion: Object,
+            registration: Object
         },
 
         methods: {

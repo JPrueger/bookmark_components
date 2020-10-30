@@ -73,16 +73,59 @@ const postDataService = {
    */
   index: () => {
     return new Promise((resolve) => {
-      // hol die posts aus localStorage (und verwandel sie mit JSON.parse ) vom String wieder in ein Javascript Objekt
+
+      // SIMONS
       const suggestions = JSON.parse(localStorage.getItem("suggestions"));
 
-      // wenn noch nichts im localstorage ist -> würden wir "null" returnen. Wir wollen hier aber sichergehen, dass immer ein Array zurückgegeben wird. Daher setzen wir es in diesem Fall als leeres Array
+      // const suggestionsValues = Object.values(suggestions)
+      // console.log(suggestionsValues)
+      // console.log(typeof suggestions)
+      // console.log(suggestions)
+      // console.log(typeof Object.values(suggestions));
+      console.log(Object.values(suggestions));
+      console.log(Object.assign(suggestions[0], suggestions[1]))
+
+      // console.log(suggestions)
+
+
+
       if (!suggestions) {
         return [];
       }
 
-      // übergib sie mit resolve an das "Promise"
       return resolve(suggestions);
+      // SIMONS END
+
+      // const allSuggestions = localStorage.getItem("suggestions")
+      // console.log(allSuggestions)
+
+      // const allSuggestionsObject = JSON.parse(allSuggestions)
+      // console.log(allSuggestionsObject)
+      // const whatAmI = localStorage.getItem("suggestions");
+      // console.log(typeof whatAmI)
+
+      // const suggestionsObject = JSON.parse(localStorage.getItem("suggestions"));
+      // console.log(typeof suggestionsObject[0])
+
+      // const suggestions = Object.assign(suggestionsObject[0], suggestionsObject[1]);
+      // console.log(typeof suggestions)
+      // console.log(suggestions)
+
+      // var suggestions = Object.entries(suggestionsMergedObject).map(([key, value]) => ({key,value}));
+      // console.log(suggestions);
+
+      // console.log(suggestions)
+
+      // const suggestions = JSON.parse(localStorage.getItem("suggestions"));
+      // console.log(suggestions)
+
+      // wenn noch nichts im localstorage ist -> würden wir "null" returnen. Wir wollen hier aber sichergehen, dass immer ein Array zurückgegeben wird. Daher setzen wir es in diesem Fall als leeres Array
+      // if (!suggestions) {
+      //   return [];
+      // }
+
+      // übergib sie mit resolve an das "Promise"
+      // return resolve(Object.values(suggestions));
     });
   },
 

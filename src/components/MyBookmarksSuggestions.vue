@@ -44,6 +44,9 @@
       newSuggestion: {
           author:'',
           title: '',
+          isbn: '', 
+          // fastThree: '',
+          // bookReview: ''
       },
       suggestions: [],
     }),
@@ -52,20 +55,21 @@
       Card
     }, 
 
-    methods: {
-      createSuggestion: function(e) {
-        e.preventDefault();
+    // methods: {
+    //   createSuggestion: function(e) {
+    //     e.preventDefault();
 
-        postDataService.store(this.newSuggestion)
-          .then((newSuggestionList) => {
-            this.suggestions = newSuggestionList;
-          });
-        this.newSuggestion = {
-          author: '',
-          title: '',
-        };
-      }
-    },
+    //     postDataService.store(this.newSuggestion)
+    //       .then((newSuggestionList) => {
+    //         this.suggestions = newSuggestionList;
+    //       });
+    //     this.newSuggestion = {
+    //       author: '',
+    //       title: '',
+    //       isbn: ''
+    //     };
+    //   }
+    // },
 
     created() {
       postDataService.index()

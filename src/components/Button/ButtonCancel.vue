@@ -2,7 +2,7 @@
     <button type="button" class="cancel">Cancel</button>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import '@/assets/styles/variables.scss';
 
     .cancel {

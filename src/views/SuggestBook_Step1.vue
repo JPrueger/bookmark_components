@@ -8,7 +8,7 @@
 
             <p>Step 1 out of 2</p>
 
-            <form action="#" v-on:submit="createSuggestion">
+            <form action="/suggest-book-step-2" v-on:submit="createSuggestion">
 
                 <select name="find_friend" class="find_friend">
                     <option value="" selected disabled hidden>Find friend here</option>
@@ -39,6 +39,7 @@
                     <input class="input" v-model="newSuggestion.title" id="title" type="text" name="title" placeholder="Get together">
                 </div>
 
+                <!-- <button class="cancel">Cancel</button> -->
                 <button>Submit!</button>
 
                 <!-- <ButtonCancel></ButtonCancel>
@@ -72,8 +73,7 @@
         },
 
         methods: {
-            createSuggestion: function(e) {
-                e.preventDefault();
+            createSuggestion: function() {
 
                 postDataService.store(this.newSuggestion)
                     .then((newSuggestionList) => {
@@ -86,13 +86,13 @@
             }
         },
     
-        created() {
-            postDataService.index()
+        // created() {
+        //     postDataService.index()
 
-            .then((allSuggestions) => {
-                this.suggestions = allSuggestions;
-            });
-        }
+        //     .then((allSuggestions) => {
+        //         this.suggestions = allSuggestions;
+        //     });
+        // }
     }
 
 </script>
