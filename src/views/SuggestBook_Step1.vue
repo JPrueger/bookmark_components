@@ -75,10 +75,10 @@
         methods: {
             createSuggestion: function() {
 
-                postDataService.store(this.newSuggestion)
-                    .then((newSuggestionList) => {
-                        this.suggestions = newSuggestionList;
-                    });
+                postDataService.storeFirstStep(this.newSuggestion)
+                    // .then((newSuggestionList) => {
+                    //     this.suggestions = newSuggestionList;
+                    // });
                 this.newSuggestion = {
                     author: '',
                     title: '',

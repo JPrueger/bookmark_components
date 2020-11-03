@@ -10,7 +10,7 @@
 
             <h2>Add your personal touch!</h2>
 
-            <form action="#" v-on:submit="createSuggestion">
+            <form action="#" v-on:submit="createSuggestionStep2">
 
                 <select name="chooseCategoy" class="categoy">
                     <option value="" selected disabled hidden>Sort by category</option>
@@ -81,7 +81,7 @@
 
         methods: {
             // TODO: zwei Objects zusammenfügen (const returnedTarget = Object.assign(#1, #2))
-            createSuggestion: function() {
+            createSuggestionStep2: function() {
                 // e.preventDefault();
 
                 postDataService.store(this.newSuggestion)

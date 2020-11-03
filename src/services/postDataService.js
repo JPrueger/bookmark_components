@@ -35,6 +35,29 @@ const postDataService = {
     });
   },
 
+  storeFirstStep: (postData) => {
+    // ACHTUNG: wir verwenden hier Promise nur, um aus LocalStorage auch ein "Promise" zu machen (damit haben wir dann sowohl bei Laravel, als auch LocalStorage genau den gleichen Funktionsaufruf)
+    // würden wir nicht beide Aufbauten gleichzeitig machen, könnte man sich das ganze Promise/resolve, ... sparen und es einfach direkt wieder zurückgeben
+    return new Promise((resolve) => {
+      // holen wir uns die aktuellen posts aus localStorage
+      const allSuggestions = JSON.parse(localStorage.getItem("suggestions")) || [];
+
+      // jeder Eintrag benötigt eine eindeutige id
+      // normalerweise macht das Laravel automatisch. Mit Localstorage müssen wir uns hier händisch etwas ausdenken, dass sich nie wiederholen kann bzw. eher unwahrscheinlich ist -> zufällige Zahl
+      postData.id = Math.random();
+
+      // nun fügen wir diesen neuen Post an das Ende all unserer Posts
+      // allSuggestions.push(postData);
+
+      // speichere die Daten in localstorage
+      // Da localStorage nur "strings" speichern kann und keine echten Javascript Objekte, müssen wir es mit JSON.stringify in einen String verwandeln
+      localStorage.setItem("suggestions", JSON.stringify(allSuggestions));
+
+      // gib die neu gespeicherten Daten (alle Posts inklusive dem Neuen) an das "Promise" zurück
+      return resolve(allSuggestions);
+    });
+  },
+
   storeRegistration: (postData) => {
     // ACHTUNG: wir verwenden hier Promise nur, um aus LocalStorage auch ein "Promise" zu machen (damit haben wir dann sowohl bei Laravel, als auch LocalStorage genau den gleichen Funktionsaufruf)
     // würden wir nicht beide Aufbauten gleichzeitig machen, könnte man sich das ganze Promise/resolve, ... sparen und es einfach direkt wieder zurückgeben
@@ -75,16 +98,49 @@ const postDataService = {
     return new Promise((resolve) => {
 
       // SIMONS
+      // console.log(typeof localStorage.getItem("suggestions"))
+      // console.log(localStorage.getItem("suggestions"))
+
+      // const suggestions = JSON.parse(localStorage.getItem("suggestions"));
+      // console.log(typeof suggestions)
+      // console.log(suggestions)
+
       const suggestions = JSON.parse(localStorage.getItem("suggestions"));
+      console.log(suggestions)
+
+      const firstArray = suggestions[0];
+      console.log(typeof firstArray)
+      const firstObjectInArray  = Object.entries(firstArray);
+      console.log(firstObjectInArray)
+
+      const secondArray = suggestions[1];
+      console.log(typeof secondArray)
+      const secondObjectInArray  = Object.entries(secondArray);
+      console.log(secondObjectInArray)
+
+      const thirdArray = firstObjectInArray.concat(secondObjectInArray);
+      console.log(typeof thirdArray)
+      // const firstObjectInArray = Object.values(firstArray);
+      // console.log(firstObjectInArray)
+
+      // const secondArray = suggestions[1];
+      // console.log(typeof secondArray)
+
+      // const thirdArray = firstArray.concat(secondArray);
+      // console.log(thirdArray)
+
+      // Array.prototype.push.apply(firstArray, secondArray);
+      // console.log(firstArray)
 
       // const suggestionsValues = Object.values(suggestions)
       // console.log(suggestionsValues)
       // console.log(typeof suggestions)
       // console.log(suggestions)
       // console.log(typeof Object.values(suggestions));
-      console.log(Object.values(suggestions));
-      console.log(Object.assign(suggestions[0], suggestions[1]))
-
+      // console.log(Object.values(suggestions));
+      // console.log(Object.assign(suggestions[0], suggestions[1]))
+      // let test = Object.assign(suggestions[0], suggestions[1]);
+      // console.log(test)
       // console.log(suggestions)
 
 
