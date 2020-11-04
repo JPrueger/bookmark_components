@@ -93,17 +93,7 @@
                     bookReview: '',
                 };
             },
-
-            // created() {
-            //     postDataService.index()
-
-            //     .then((allSuggestions) => {
-            //         this.suggestions = allSuggestions;
-            //     });
-            // }
         }
-
-
         
     }
 </script>

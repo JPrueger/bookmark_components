@@ -10,6 +10,7 @@ import NotFound from "../views/NotFound.vue";
 import AuthorOfTheMonth from "../views/AuthorOfTheMonth.vue";
 import TermsOfService from "../views/TermsOfService.vue";
 import PrivacyPolicy from "../views/PrivacyPolicy.vue";
+import Friends from "../views/Friends.vue";
 
 
 const routes = [
@@ -66,6 +67,11 @@ const routes = [
     path: "/privacy-policy",
     name: "PrivacyPolicy",
     component: PrivacyPolicy,
+  },
+  {
+    path: "/friends",
+    name: "Friends",
+    component: Friends,
   }
 ];
 

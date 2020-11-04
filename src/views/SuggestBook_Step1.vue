@@ -75,24 +75,16 @@
         methods: {
             createSuggestion: function() {
 
-                postDataService.storeFirstStep(this.newSuggestion)
-                    // .then((newSuggestionList) => {
-                    //     this.suggestions = newSuggestionList;
-                    // });
+                postDataService.store(this.newSuggestion)
+                    .then((newSuggestionList) => {
+                        this.suggestions = newSuggestionList;
+                    });
                 this.newSuggestion = {
                     author: '',
                     title: '',
                 };
             }
         },
-    
-        // created() {
-        //     postDataService.index()
-
-        //     .then((allSuggestions) => {
-        //         this.suggestions = allSuggestions;
-        //     });
-        // }
     }
 
 </script>
