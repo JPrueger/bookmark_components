@@ -43,7 +43,7 @@
             text-decoration: none;
             color: black;
             display: block;
-            margisn-bottom: 50px;
+            margin-bottom: 50px;
 
             &:last-child {
                 margin-bottom: 70px;
