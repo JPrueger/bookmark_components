@@ -148,7 +148,7 @@
 
     #nav {
         padding-top: 20px;
-        margin-bottom: 8%;
+        margin-bottom: 10%;
 
         img {
         width: 100px;
@@ -156,7 +156,7 @@
 
         ul {
             position: absolute;
-            top: 15%;
+            top: 130px;
             padding: 0 20px 0 20px;
             width: 100%;
             left: -110%;

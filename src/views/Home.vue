@@ -8,7 +8,9 @@
         <p>We’ve got you covered! Well, actually your friends do. Get yourself an overview of all recommendations your friends gave you about the book you need to read next. Keep your list clear and tick off each book you’ve read!
         </p>
 
-        <p>All you need to do is register <a href="/register">here!</a></p>
+        <!-- <p>All you need to do is register <a href="/register">here!</a></p> -->
+        <p>All you need to do is register <router-link to="/register">here!</router-link></p>
+
       </div>
 
       <HomeIllustrationFloatingGirl></HomeIllustrationFloatingGirl>
